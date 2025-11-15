@@ -1,0 +1,7 @@
+{
+  "name": "GNEX GYM MEMBER MANAGEMENT-1026",
+  "description": "A modern, AI-powered dashboard for managing gym memberships, including member tracking and personalized workout and diet plan generation using Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

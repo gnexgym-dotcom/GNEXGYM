@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3e%3cpath fill='%23FF0000' d='m242.61 249.98v-51.35h-25.68v51.35c0 28.36 23 51.35 51.35 51.35s51.35-23 51.35-51.35v-102.71h-25.68v102.71c0 14.18-11.51 25.68-25.68 25.68s-25.68-11.5-25.68-25.68zm-25.68-128.39v-25.68h102.71c14.18 0 25.68 11.5 25.68 25.68s-11.5 25.68-25.68 25.68h-51.35l51.35-51.35-18.15-18.15-51.35 51.35-25.68-25.68z'/%3e%3c/svg%3e" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GNEX GYM Membership Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* Style the calendar icon for date inputs in Webkit browsers (Chrome, Safari) */
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        filter: invert(1) brightness(1.5); /* Makes the icon white and slightly brighter */
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'brand-primary': '#00F5A0',
+              'brand-secondary': '#00D9E0',
+              'brand-red': '#FF0000',
+              'gray-900': '#121212',
+              'gray-800': '#1E1E1E',
+              'gray-700': '#2A2A2A',
+              'gray-600': '#3D3D3D',
+              'gray-400': '#9CA3AF',
+              'gray-200': '#E5E7EB',
+            },
+            animation: {
+              'spin-slow': 'spin 20s linear infinite',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900 text-gray-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
